@@ -1,11 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brows Pet </title>
+    <title>Browse4Pet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Daisy CND -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/6a2c66ea03.js" crossorigin="anonymous"></script>
+
+    <!-- Tailwind CND -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              accent: '#FFDC26',
+              yelloww: '#F9DF8A',
+              secondary: '#FFF9F4',
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+        .font-sora {
+        font-family: 'sora', sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .font-ADLaM {
+        font-family: 'ADLaM Display', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
 </head>
-<body>
-    
+<body class="font-sora">
+    <!-- Header Section -->
+    <header>
+        <nav class="bg-secondary">
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center py-2.5 md:py-6">
+                    <div class="mx-2 lg:flex items-center gap-2">
+                        <img src="Images/logo-header.png" alt="logo" class="h-10">
+                        <h1 class="text-2xl font-reguler hidden lg:block">
+                            Browse <span class="text-3xl text-accent">4</span> Pets
+                        </h1>
+                    </div>
+                    <div class="hidden lg:flex items-center gap-8">
+                        <ul class="flex items-center gap-8">
+                            <li><a href="" class="text-lg font-sora">Find a Pet</a></li>
+                            <li><a href="" class="text-lg font-sora">Breeds</a></li>
+                            <li><a href="" class="text-lg font-sora">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="hidden lg:flex items-center">
+                        <i class="fa-regular fa-bell mx-1 text-xl"></i>
+                        <i class="fa-solid fa-magnifying-glass mx-1 text-xl "></i>
+                        <button class="border-accent border-2 px-7 py-2.5 rounded-lg font-sora text-black mx-3">
+                            Login
+                        </button>
+                        <button class="bg-accent font-sora px-7 py-2.5 rounded-lg text-black">
+                            Register
+                        </button>
+                    </div>
+                    <!-- Hamburger -->
+                    <div class="mx-2 lg:hidden">
+                        <button id="menu-toggle">
+                            <i class="fa-solid fa-bars text-3xl"></i>
+                        </button>
+                    </div>
+                </div>
+                <div id="mobile-menu" class="hidden flex flex-col items-center gap-4 bg-secondary py-4 lg:hidden">
+                    <ul class="flex flex-col items-center gap-4">
+                        <li><a href="" class="text-lg font-sora">Find a Pet</a></li>
+                        <li><a href="" class="text-lg font-sora">Breeds</a></li>
+                        <li><a href="" class="text-lg font-sora">Contact Us</a></li>
+                    </ul>
+                    <div class="flex flex-col gap-2">
+                        <button class="border-accent border-2 px-7 py-2.5 rounded-lg font-sora text-black">Login
+                        </button>
+                        <button class="bg-accent font-sora px-7 py-2.5 rounded-lg text-black">Register
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner Section -->
+         <section class="container mx-auto bg-[url('Images/cat-big.png')] bg-contain bg-bottom bg-no-repeat min-h-[500px] aspect-[16/9] mb-16 ">
+            <h1 class="px-2 text-3xl mt-3 md:mt-16 md:text-5xl font-ADLaM ">Pamper Your Pet,<br> Because They Deserve<br>the Bes</h1>
+            <p class="px-2 text-sm mt-4 md:mt-6 md:text-xl">Discover a world of treats, toys, and essentials handpicked for<br>your furry friends. Shop now and make tails wag with joy!</p>
+            <button class="mx-2 mt-2 md:mt-6 bg-accent font-sora px-7 py-2.5 rounded-lg text-black">Find a Pet
+            </button>
+         </section>
+    </header>
+    <!-- Main Section -->
+    <main>
+        <section class="container mx-auto px-4 pb-11 sm:px-6 lg:px-8">
+            <h2 class="text-2xl lg:text-4xl font-ADLaM mb-8 text-black">Browse By Categories</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+
+              <div class="py-10 px-12 bg-yelloww rounded-2xl shadow-lg flex flex-col items-center">
+                <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-md">
+                  <img src="Images/bird-cartoon.png" alt="Birds">
+                </div>
+                <h2 class="text-xs lg:mt-4 lg:text-lg font-sora font-semibold text-black">Birds</h2>
+                <p class="text-sm text-gray-600">3 items</p>
+              </div>
+
+              <div class="py-10 px-12 bg-yelloww rounded-2xl shadow-lg flex flex-col items-center">
+                <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-md">
+                  <img src="Images/cat-cartoon.png" alt="Cat">
+                </div>
+                <h2 class="lg:mt-4 text-lg font-sora font-semibold text-black">Cat</h2>
+                <p class="text-sm text-gray-600">3 items</p>
+              </div>
+
+              <div class="py-10 px-12 bg-yelloww rounded-2xl shadow-lg flex flex-col items-center">
+                <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-md">
+                  <img src="Images/fish-cartoon.png" alt="Fish">
+                </div>
+                <h2 class="mt-4 text-lg font-sora font-semibold text-black">Fish</h2>
+                <p class="text-sm text-gray-600">3 items</p>
+              </div>
+
+              <div class="py-10 px-12 bg-yelloww rounded-2xl shadow-lg flex flex-col items-center">
+                <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-md">
+                  <img src="Images/mouse-cartoon.png" alt="Mouse">
+                </div>
+                <h2 class="mt-4 text-lg font-sora font-semibold text-black">Mouse</h2>
+                <p class="text-sm text-gray-600">3 items</p>
+              </div>
+
+              <div class="py-10 px-12 bg-yelloww rounded-2xl shadow-lg flex flex-col items-center">
+                <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-md">
+                  <img src="Images/dog-cartoon.png" alt="Dog">
+                </div>
+                <h2 class="mt-4 text-lg font-sora font-semibold text-black">Dog</h2>
+                <p class="text-sm text-gray-600">3 items</p>
+              </div>
+
+              <div class="py-10 px-12 bg-yelloww rounded-2xl shadow-lg flex flex-col items-center">
+                <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-md">
+                  <img src="Images/rabbit-cartoon.png" alt="Rabbit">
+                </div>
+                <h2 class="mt-4 text-lg font-sora font-semibold text-black">Rabbit</h2>
+                <p class="text-sm text-gray-600">3 items</p>
+              </div>
+            </div>
+        </section>
+        <section class="bg-secondary ">
+            <div class="container mx-auto">
+                <h2>Trending Pet Products</h2>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer></footer>
 </body>
 </html>
