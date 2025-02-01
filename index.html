@@ -70,7 +70,7 @@
                         <button class="border-accent border-2 px-7 py-2.5 rounded-lg font-sora text-black mx-3">
                             Login
                         </button>
-                        <button class="bg-accent font-sora px-7 py-2.5 rounded-lg text-black">
+                        <button class="bg-accent font-sora px-7  py-2.5 rounded-lg text-black">
                             Register
                         </button>
                     </div>
@@ -98,9 +98,9 @@
         </nav>
         <!-- Banner Section -->
          <section class="container mx-auto bg-[url('Images/cat-big.png')] bg-contain bg-bottom bg-no-repeat min-h-[500px] aspect-[16/9] mb-16 ">
-            <h1 class="px-2 text-3xl mt-3 md:mt-16 md:text-5xl font-ADLaM ">Pamper Your Pet,<br> Because They Deserve<br>the Bes</h1>
+            <h1 class="px-2 text-3xl mt-3 md:mt-16 md:text-5xl font-ADLaM ">Pamper Your Pet,<br> Because They Deserve<br>the Best</h1>
             <p class="px-2 text-sm mt-4 md:mt-6 md:text-xl">Discover a world of treats, toys, and essentials handpicked for<br>your furry friends. Shop now and make tails wag with joy!</p>
-            <button class="mx-2 mt-2 md:mt-6 bg-accent font-sora px-7 py-2.5 rounded-lg text-black">Find a Pet
+            <button class="mx-2 mt-2 md:mt-6 bg-accent animate-pulse font-sora px-7 py-2.5 rounded-lg text-black">Find a Pet
             </button>
          </section>
     </header>
@@ -281,8 +281,48 @@
                 </div>
             </div>
         </section> 
+        <section class="container mx-auto px-4 pb-16 sm:px-6 lg:px-10 mt-10" >
+          <div class="bg-yelloww py-12 rounded-xl px-5">
+            <h2 class="text-2xl md:text-3xl font-bold font-ADLaM text-center text-gray-800 mb-10">
+              Love from early customers
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              <!-- Testimonial 1 -->
+              <div class="bg-secondary shadow-md rounded-lg p-6">
+                <div class="flex items-center mb-4">
+                  <div class="w-10 h-10 bg-yelloww rounded-full"></div>
+                  <h3 class="ml-4 font-medium text-gray-800">Noah Wilson</h3>
+                </div>
+                <p class="text-gray-600">
+                  This website has made caring for my dog so much easier! The tips and resources for pet health are top-notch, and the store has everything I need for my furry friend.
+                </p>
+              </div>
+              <!-- Testimonial 2 -->
+              <div class="bg-secondary shadow-md rounded-lg p-6">
+                <div class="flex items-center mb-4">
+                  <div class="w-10 h-10 bg-red-500 rounded-full"></div>
+                  <h3 class="ml-4 font-medium text-gray-800">Emma Carter</h3>
+                </div>
+                <p class="text-gray-600">
+                  As a cat owner, I love the convenience of this site! From grooming tips to buying toys, it’s been a one-stop shop for everything my cat needs.
+                </p>
+              </div>
+              <!-- Testimonial 3 -->
+              <div class="bg-secondary shadow-md rounded-lg p-6">
+                <div class="flex items-center mb-4">
+                  <div class="w-10 h-10 bg-yellow-500 rounded-full"></div>
+                  <h3 class="ml-4 font-medium text-gray-800">Lucas Anderson</h3>
+                </div>
+                <p class="text-gray-600">
+                  I’m so impressed with the customer service here. They helped me pick the right food for my rabbit, and their advice made such a difference in my pet’s health!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
     <!-- Low price section -->
-        <section class="container mx-auto px-4 pb-11 sm:px-6 lg:px-8">
+        <section class="container mx-auto px-4 pb-11 sm:px-6 lg:px-8  my-24 -mb-[200px]">
           <h2 class="text-2xl lg:text-4xl font-ADLaM mb-8 mt-24 text-black">Everyday low Price</h2>
           <div class="grid lg:grid-cols-2 lg:grid-cols-3 gap-7">
             <!-- Big card -->
@@ -308,12 +348,55 @@
                 </div>
             </div>
           </div>
-          
+        </section>
+
+        
+        <!-- Subscribe Section -->
+        <section  class="relative -bottom-[200px] " >
+          <div class="container mx-auto px-4 pb-11 sm:px-6 lg:px-8 py-9 bg-secondary flex flex-col md:flex-row items-center justify-center rounded-2xl gap-16 lg:gap-24 ">
+            <div class="mx-auto md:mx-0"><img src="Images/cute-pet-mid.png" alt="None" ></div>
+              <div class="text-center">
+                <h1 class="text-3xl font-bold text-gray-800 mb-2">Get Pawsome News!</h1>
+                <p class="text-gray-600 mb-4">Exclusive training tips, tricks, product deals and more.</p>
+                <form class="mb-2">
+                  <input type="email" placeholder="Enter email..." class="p-4 w-96 rounded-lg border border-gray-300 mb-4 ">
+                </form>
+                <button type="submit" class="bg-accent text-white font-medium px-6 py-3 rounded-lg">Subscribe</button>
+              </div>
+            </div>
         </section>
     </main>
-     <!-- Footer Section -->
-    <footer class="bg-secondary  " >
-        <h1> off</h1>
-    </footer>
+
+    <!-- Footer Section -->
+    <footer class="bg-yelloww pt-[250px]">
+      <div class="container mx-auto px-4 pb-11 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-3 lg:gap-30 justify-center items-center ">
+        <div>
+          <div class=" items-center flex gap-2">
+            <img src="Images/logo-footer.png" alt="logo" class="h-10">
+            <h1 class="text-2xl font-reguler">
+                Browse <span class="text-3xl text-accent">4</span> Pets
+            </h1>
+          </div>
+          <p class="mt-6">Discover a world of treats, toys,<br> and essentials handpicked for your furry<br> friends</p>
+        </div>
+          <div class="flex flex-col">
+              <ul class=  "lg:ml-40 text-black space-y-4">
+                  <li><a href="#">Find a pet</a></li>
+                  <li><a href="#">Breeds</a></li>
+                  <li><a href="#">Contact us</a></li>
+              </ul>
+          </div>
+          <div class="lg:ml-52 flex flex-col items-start">
+              <h2 class=" text-lg font-sara text-gray-800 mb-2">Follow Us</h2>
+              <div class="flex space-x-4 gap-2">
+                  <a href="#" ><i class="fab fa-facebook"></i></a>
+                  <a href="#" ><i class="fab fa-instagram"></i></a>
+                  <a href="#" ><i class="fab fa-linkedin"></i></a>
+                  <a href="#" ><i class="fab fa-youtube"></i></a>
+              </div>
+          </div>
+      </div>
+  </footer>
 </body>
 </html>
+
